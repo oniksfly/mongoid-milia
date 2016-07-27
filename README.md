@@ -7,7 +7,7 @@ Provide `acts_as_tenant` method for [Mongoid](https://github.com/mongodb/mongoid
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'mongoid-milia'
+gem 'mongoid-milia', github: 'oniksfly/mongoid-milia'
 ```
 
 And then execute:
