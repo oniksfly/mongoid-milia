@@ -14,8 +14,8 @@ module Mongoid
 
         # Callbacks
 
-        before_validation(on: create) do |object|
-          object.tenant_id = Thread.current[:tenant_id]
+        before_validation do |object|
+          object.tenant_id = Thread.current[:tenant_id] if object.new_record?
           true
         end
 
